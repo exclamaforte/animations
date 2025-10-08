@@ -1,0 +1,9 @@
+*.svg
+*.tex
+*.pyc
+*.mp4
+*.srt
+partial_movie_file_list.txt
+cache.json
+*.mp3
+*.wav
