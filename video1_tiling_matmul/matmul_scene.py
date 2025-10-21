@@ -1,11 +1,22 @@
 """Animated walkthrough of matrix multiply arithmetic intensity concepts."""
 
 import math
+import sys
+from pathlib import Path
 from typing import Tuple
+
+# Ensure project root is importable when Manim loads this module directly.
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from manim_voiceover import VoiceoverScene
 from manim_voiceover.services.gtts import GTTSService
-from my_manim_types import LabeledRoundedRect, StreamingMultiprocessor, SMInstruction
+from manim_types.my_manim_types import (
+    LabeledRoundedRect,
+    StreamingMultiprocessor,
+    SMInstruction,
+)
 from tiled_matmul_visualization import (
     tiled_matmul_visualization,
     simple_matmul_visualization,

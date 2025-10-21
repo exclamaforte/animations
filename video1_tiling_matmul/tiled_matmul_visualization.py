@@ -1,5 +1,5 @@
 from manim_voiceover import VoiceoverScene
-from my_manim_types import StreamingMultiprocessor, SMInstruction
+from manim_types.my_manim_types import StreamingMultiprocessor, SMInstruction
 from manim import (
     FadeIn,
     FadeOut,
